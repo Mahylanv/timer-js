@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Minuteur</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function decompte (n) {
+            document.write(n + '<br>')
+            if (n === 0) {
+                alert('Temps écoulé')
+                return
+            }
+            
+            setTimeout(() => {
+                decompte(n - 1)
+            },1000)
+        }
+
+        decompte(prompt('temps'))
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
